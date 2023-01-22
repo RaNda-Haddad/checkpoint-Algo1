@@ -1,0 +1,66 @@
+
+ALGORITHM nb_caracter
+
+var 
+   str : STRING := "The best in the world." ;
+    count : INTEGER :=0 ;
+
+BEGIN
+    FOR (int i=0; i< str.length(); i++) DO
+       IF(str.charAt[i] !='') THEN
+         count++;
+       END_IF  
+    END_FOR 
+     write(count);
+END
+
+
+
+
+
+ALGORITHM nb_words
+
+var 
+   str : STRING := "The best in the word." ;
+    count : INTEGER :=1 ;
+
+BEGIN
+    FOR i in str DO
+    IF i =="" THEN
+    count +=1 
+    END_IF ;
+    END_FOR  ;
+    write count() ;
+END
+
+
+
+
+
+ALGORITHM nb_vowels
+
+var 
+   str : STRING := "The best in the world." ;
+   v: ['a', 'o', 'u', 'i','y','e']
+    count : INTEGER :=0 ;
+
+BEGIN
+   FOR i in str DO
+    IF i in v THEN
+    count +=1 
+       END_IF  
+    END_FOR 
+     write(count);
+END
+
+
+
+
+
+
+
+
+
+
+
+
